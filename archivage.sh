@@ -3,8 +3,9 @@
 source archivage.var
 
 # overwriting of the variables for now
-LOCAL_BACKUP_DIR=/tmp/backups
-LOCAL_BACKUP_RET=/tmp/retention
+# DEV workaround only
+# LOCAL_BACKUP_DIR=/tmp/backups
+# LOCAL_BACKUP_RET=/tmp/retention
 
 for i in $(find $LOCAL_BACKUP_DIR -mtime +$RETENTION_DAYS -exec echo {} \;); 
   do
